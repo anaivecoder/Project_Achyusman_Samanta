@@ -10,7 +10,7 @@ from torchvision import datasets
 from torch.utils.data import random_split, DataLoader, Dataset
 from tqdm import tqdm
 
-def Model_Training():
+def Model_Training(*args, **kwargs):
     
     DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print("Using device:", DEVICE)
