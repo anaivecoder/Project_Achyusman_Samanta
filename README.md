@@ -2,13 +2,13 @@
 # Image-Based Scene Classification Using Deep Learning
 
 ### Problem Description 
-Automated scene classification is a crucial task in computer vision, with applications in geospatial analysis, autonomous navigation, and content organization. The goal of this project is to develop a deep learning model capable of classifying images into six categories: buildings, forests, glaciers, mountains, sea, and streets. Manually sorting large image datasets is inefficient and prone to errors, making an automated system highly beneficial. A robust model must generalise well across diverse images because natural scenes exhibit high variability in lighting, perspective, and environmental conditions. This project aims to leverage Convolutional Neural Networks (CNNs) to effectively capture spatial hierarchies in images and distinguish between different scene categories. 
+Automated scene classification is crucial in computer vision, with applications in geospatial analysis, autonomous navigation, and content organisation. This project aims to develop a deep learning model capable of classifying images into six categories: buildings, forests, glaciers, mountains, sea, and streets. Manually sorting large image datasets is inefficient and prone to errors, making an automated system highly beneficial. A robust model must generalise well across diverse images because natural scenes exhibit high variability in lighting, perspective, and environmental conditions. This project uses Convolutional Neural Networks (CNNs) to effectively capture image spatial hierarchies and distinguish between different scene categories. 
 **Input**: A high-resolution RGB image (150x150 pixels) in `.jpg` format. 
 **Output**: Text representing the image as one of the six categories: building, forest, glacier, sea,  streets or mountain.
 
 ### Dataset 
 ##### Source: Intel image classification dataset 
-Pre-labelled images of size 150x150 of natural scenes around the world, split into train, test and prediction 
+Pre-labelled images of size 150x150 of natural scenes around the world, split into train, test and prediction. 
 [Link:](https://www.kaggle.com/datasets/puneet6060/intel-image-classification)
 
 ##### Structure:  
@@ -34,10 +34,10 @@ pip install torch torchvision
 pip install scikit-learn
 pip install matplotlib seaborn tqdm Pillow numpy
 ```
-In your virtual pyton environment run `train.py` to train the model on the data_set (dowload it from the link provided above).
-To use the model for predicting your images run `predict.py`. It takes the path of a directory that contain your images as input and returns image name: predicted_label as the output.
+In your virtual python environment run `train.py` to train the model on the data_set (download it from the link above).
+To use the model for predicting your images run `predict.py`. **It takes the path of a directory that contain your images as input and returns image name: predicted_label as the output.**
 
-#### Evaluation on the Test Data 
+### Evaluation on the Test Data 
 Final Test Accuracy: 0.9204
 ##### Classification Report on Test Set:
 
